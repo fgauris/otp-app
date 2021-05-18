@@ -53,19 +53,19 @@ namespace OtpApp
             this.generateKeyMenuItem,
             this.exitMenuItem});
             this.traymenu.Name = "traymenu";
-            this.traymenu.Size = new System.Drawing.Size(195, 48);
+            this.traymenu.Size = new System.Drawing.Size(122, 48);
             // 
             // generateKeyMenuItem
             // 
             this.generateKeyMenuItem.Name = "generateKeyMenuItem";
-            this.generateKeyMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.generateKeyMenuItem.Size = new System.Drawing.Size(121, 22);
             this.generateKeyMenuItem.Text = "Generate";
             this.generateKeyMenuItem.Click += new System.EventHandler(this.GenerateKeyMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.exitMenuItem.Size = new System.Drawing.Size(121, 22);
             this.exitMenuItem.Text = "Exit";
             this.exitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
@@ -81,7 +81,7 @@ namespace OtpApp
             this.ClientSize = new System.Drawing.Size(300, 104);
             this.Name = "Form1";
             this.ShowInTaskbar = false;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.traymenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();

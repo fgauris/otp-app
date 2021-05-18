@@ -48,9 +48,13 @@ namespace OtpApp
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Shown(object sender, EventArgs e)
         {
+            //to minimize window
             this.WindowState = FormWindowState.Minimized;
+
+            //to hide from taskbar
+            this.Hide();
         }
     }
 }
