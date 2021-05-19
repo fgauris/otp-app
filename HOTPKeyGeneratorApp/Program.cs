@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtpApp
+namespace HOTPKeyGeneratorApp
 {
     static class Program
     {
@@ -14,6 +11,9 @@ namespace OtpApp
         [STAThread]
         static void Main()
         {
+            BusinessLogic.CreateDirectoryAndFileIfNotExist();
+
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

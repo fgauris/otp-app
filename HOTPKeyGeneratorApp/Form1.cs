@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtpApp
+namespace HOTPKeyGeneratorApp
 {
     public partial class Form1 : Form
     {
@@ -31,7 +24,8 @@ namespace OtpApp
 
         private void GenerateKeyMenuItem_Click(object sender, System.EventArgs e)
         {
-            Application.Exit();
+            var key = BusinessLogic.GenerateKey();
+            Clipboard.SetText(key);
         }
 
         private void ExitMenuItem_Click(object sender, System.EventArgs e)
@@ -50,10 +44,10 @@ namespace OtpApp
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            //to minimize window
+            // minimize window
             this.WindowState = FormWindowState.Minimized;
 
-            //to hide from taskbar
+            // hide from taskbar
             this.Hide();
         }
     }

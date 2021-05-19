@@ -1,5 +1,5 @@
 ﻿
-namespace OtpApp
+namespace HOTPKeyGeneratorApp
 {
     partial class Form1
     {
